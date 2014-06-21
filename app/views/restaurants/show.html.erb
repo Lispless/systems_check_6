@@ -1,3 +1,18 @@
 <h1>
 	Show page for restaurant
 </h1>
+
+<h4>
+	<%= @restaurant.name %>
+</h4>
+<span>
+	<%= @restaurant.address + ' ' + @restaurant.city + ', ' + @restaurant.state + ' ' + @restaurant.zip.to_s %>
+</span>
+<br />
+<span>
+	<%= @restaurant.description %>
+</span>
+<br />
+<span>
+	<%= @restaurant.category %>
+</span>

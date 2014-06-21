@@ -5,7 +5,7 @@ Index for restaurants
 <ul>
 	<% @restaurants.each do |restaurant| %>
 	<li>
-		<%= restaurant.name %>
+		<%= link_to restaurant.name, restaurants_path(@restaurant) %>
 	</li>
 	<% end %>
 </ul>
