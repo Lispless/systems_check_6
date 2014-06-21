@@ -1,5 +1,5 @@
 <h1>
-	New
+	New restaurant
 </h1>
 
 <%= form_for @restaurant do |f| %>
@@ -31,6 +31,14 @@
     <div>
     <%= f.label :zip %>
     <%= f.text_field :zip %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <div>
+    <%= f.label :category %>
+    <%= f.text_field :category %>
   </div>
   <%= f.submit %>
 <%end%>
