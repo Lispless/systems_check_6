@@ -22,5 +22,8 @@
  Rating
 </h4>
 <span>
-	<%= @review.rating %>
+	<% @review.rating %>
+	<br />
+	<% @review.body %>
+</span>
 <%= link_to 'Let me write a review!', new_restaurant_review_path(@restaurant) %>
