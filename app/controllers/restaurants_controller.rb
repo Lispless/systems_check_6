@@ -1,7 +1,7 @@
 class RestaurantsController < ApplicationController
 
 	def index
-		@restaurants = Restaurant.all
+		@restaurants = Restaurant.all.order("id DESC").limit(10)
 	end
 
 	def show
@@ -21,6 +21,8 @@ class RestaurantsController < ApplicationController
       render :new
     end
   end
+
+  private
 
   def restaurant_params
     params.require(:restaurant).permit(:name, :address, :city, :state, :zip, :description, :category)

@@ -16,3 +16,11 @@
 <span>
 	<%= @restaurant.category %>
 </span>
+<br />
+
+<h4>
+ Rating
+</h4>
+<span>
+	<%= @review.rating %>
+<%= link_to 'Let me write a review!', new_restaurant_review_path(@restaurant) %>
